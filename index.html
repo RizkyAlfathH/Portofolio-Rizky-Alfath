@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rizky Alfath — Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <div class="brand">
+        <i class="fa-solid fa-terminal"></i>
+        <span>RizkyDev</span>
+      </div>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-inner container">
+        <div class="eyebrow">Hi, my name is</div>
+        <h1 class="hero-title">Rizky <span class="accent">Alfath</span></h1>
+        <div class="hero-sub">
+          <span id="typed" class="typed"></span><span class="caret">▌</span>
+        </div>
+        <p class="hero-desc">RPL Student • Web Developer • I build modern web apps — clean code, real results.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-ghost">See Projects</a>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <h2>Skills & Technologies</h2>
+        <p class="skills-intro">Technologies I work with</p>
+        
+        <div class="marquee-container">
+          <div class="marquee">
+            <div class="marquee-content">
+              <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-code"></i>
+                <span>C#</span>
+              </div>
+              <!-- <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <span>React</span>
+              </div> -->
+              <!-- <div class="skill-item">
+                <i class="fab fa-node-js"></i>
+                <span>Node.js</span>
+              </div> -->
+              <div class="skill-item">
+                <i class="fab fa-laravel"></i>
+                <span>Laravel</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-bootstrap"></i>
+                <span>Bootstrap</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-wind"></i>
+                <span>Tailwind</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="skill-item">
+                <i class="fa-brands fa-git-alt"></i>
+                <span>GitLab</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>MySQL</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-android"></i>
+                <span>Flutter</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-fire"></i>
+                <span>Django</span>
+              </div>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="marquee-content" aria-hidden="true">
+              <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <span>CSS3</span>
+              </div>
+              <!-- <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <span>React</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-node-js"></i>
+                <span>Node.js</span>
+              </div> -->
+              <div class="skill-item">
+                <i class="fab fa-laravel"></i>
+                <span>Laravel</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-bootstrap"></i>
+                <span>Bootstrap</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-wind"></i>
+                <span>Tailwind</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>MySQL</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-android"></i>
+                <span>Flutter</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-fire"></i>
+                <span>Django</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="about-text">
+          <h2>About</h2>
+          <p>
+            I'm a Software Engineering (RPL) student at <strong>SMKN 11 Bandung</strong>. I specialize in building
+            responsive and performant web applications using Django, JavaScript, and Flutter for mobile projects.
+            I enjoy learning new tech and solving real problems with elegant code.
+          </p>
+          <ul class="meta">
+            <li><strong>Location:</strong> Bandung, Indonesia</li>
+            <li><strong>Role:</strong> Web Developer / RPL Student</li>
+            <li><strong>Contact:</strong> rizkyalfath80@gmail.com</li>
+          </ul>
+        </div>
+
+        <div class="about-card">
+          <div class="photo-wrap">
+            <img src="assets\profile.jpg" alt="Rizky Alfath" />
+          </div>
+          <div class="card-info">
+            <h3>Quick facts</h3>
+            <ul>
+              <li>SMKN 11 Bandung — RPL</li>
+              <li>Projects: Guestbook Digital, Kopasmen Web</li>
+              <li>Tools: Git, VS Code, Postman</li>
+            </ul>
+            <a class="btn-small" href="https://github.com/alfathz" target="_blank">View GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+
+            <article class="project-card">
+                <div class="project-body">
+                <h3>kopasmen_mobile</h3>
+                <p>Project tim koperasi berbasis mobile menggunakan C++ untuk logika utama.</p>
+                <div class="tags">
+                    <span>C++</span>
+                    <span>Flutter</span>
+                    <span>HTML</span>
+                    <span>Team Project</span>
+                </div>
+                <a class="btn-small" href="https://github.com/RizkyAlfathH/kopasmen_mobile" target="_blank">View Repo</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-body">
+                <h3>KopasmenSebelas</h3>
+                <p>Aplikasi koperasi berbasis web menggunakan Django dan HTML frontend.</p>
+                <div class="tags">
+                    <span>Django</span>
+                    <span>HTML</span>
+                    <span>Python</span>
+                    <span>Team Project</span>
+                </div>
+                <a class="btn-small" href="https://github.com/RizkyAlfathH/KopasmenSebelas" target="_blank">View Repo</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-body">
+                <h3>laravel-portofolio</h3>
+                <p>Latihan membuat portofolio web dengan framework Laravel.</p>
+                <div class="tags">
+                    <span>Laravel</span>
+                    <span>PHP</span>
+                    <span>HTML</span>
+                    <span>JavaScript</span>
+                    <span>Blade</span>
+                    <span>CSS</span>
+                </div>
+                <a class="btn-small" href="https://github.com/RizkyAlfathH/laravel-portofolio" target="_blank">View Repo</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-body">
+                <h3>portofolio</h3>
+                <p>Website portofolio pribadi pertama menggunakan HTML, CSS murni dan JavaScript.</p>
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <a class="btn-small" href="https://github.com/RizkyAlfathH/portofolio" target="_blank">View Repo</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-body">
+                <h3>Web-Statis</h3>
+                <p>Latihan dasar membuat halaman web statis dengan HTML dan CSS.</p>
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Static Page</span>
+                </div>
+                <a class="btn-small" href="https://github.com/RizkyAlfathH/Web-Statis" target="_blank">View Repo</a>
+                </div>
+            </article>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="section">
+      <div class="container contact-inner">
+        <h2>Contact</h2>
+        <p>Want to collaborate or hire? Send me a message.</p>
+        <div class="contact-actions">
+          <a href="mailto:rizkyalfath@example.com" class="btn">Say Hello</a>
+          <div class="socials">
+            <a href="https://github.com/alfathz" target="_blank" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://instagram.com/alfathz" target="_blank" title="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://id.linkedin.com/in/rizky-alfath-humaedi-6b6944331" target="_blank" title="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/6281998473571" target="_blank" title="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Rizky Alfath • Built with code & ☕</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
