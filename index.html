@@ -5,337 +5,284 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Rizky Alfath — Web Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <canvas id="bg-canvas"></canvas>
 
-  <header class="nav-wrap">
-    <nav class="nav container">
-      <div class="brand">
-        <i class="fa-solid fa-terminal"></i>
-        <span>RizkyDev</span>
-      </div>
-      <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<div class="scroll-progress" id="scrollProgress"></div>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-inner container">
-        <div class="eyebrow">Hi, my name is</div>
-        <h1 class="hero-title">Rizky <span class="accent">Alfath</span></h1>
-        <div class="hero-sub">
-          <span id="typed" class="typed"></span><span class="caret">▌</span>
-        </div>
-        <p class="hero-desc">RPL Student • Web Developer • I build modern web apps — clean code, real results.</p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn-ghost">See Projects</a>
-          <a href="#contact" class="btn">Contact Me</a>
-        </div>
-      </div>
-      <div class="scroll-indicator">
-        <i class="fa-solid fa-chevron-down"></i>
-      </div>
-    </section>
+<!-- NAV -->
+<nav>
+  <div class="logo">&lt;<span>Rizky</span> /&gt;</div>
+  <ul>
+    <li><a href="#hero">Beranda</a></li>
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#skills">Keahlian</a></li>
+    <li><a href="#projects">Proyek</a></li>
+    <li><a href="#contact">Kontak</a></li>
+  </ul>
+</nav>
 
-    <section id="skills" class="section skills-section">
-      <div class="container">
-        <h2>Skills & Technologies</h2>
-        <p class="skills-intro">Technologies I work with</p>
-        
-        <div class="marquee-container">
-          <div class="marquee">
-            <div class="marquee-content">
-              <div class="skill-item">
-                <i class="fab fa-python"></i>
-                <span>Python</span>
+<!-- STARFIELD CANVAS -->
+<canvas id="starfield"></canvas>
+
+<!-- PARTICLES -->
+<div class="particles" id="particles"></div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-text">
+    <div class="hero-badge">Available for opportunities</div>
+    <h1>Halo, Saya<br><span class="name-highlight">Rizky Alfath</span></h1>
+    <p class="hero-sub">// Web Developer · SMKN 11 Bandung RPL<br>Membangun aplikasi web yang responsif, cepat, dan user-friendly dengan passion dan presisi.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">Lihat Proyek →</a>
+      <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+    </div>
+  </div>
+
+  <!-- 3D LAPTOP -->
+  <div class="laptop-scene">
+    <div class="laptop-wrapper">
+      <div class="laptop">
+        <!-- Screen -->
+        <div class="laptop-lid">
+          <div class="screen-bezel">
+            <div class="vscode">
+              <!-- Title Bar -->
+              <div class="vsc-titlebar">
+                <div class="vsc-dot red"></div>
+                <div class="vsc-dot yellow"></div>
+                <div class="vsc-dot green"></div>
+                <span class="vsc-filename">portfolio.js — Visual Studio Code</span>
               </div>
-              <div class="skill-item">
-                <i class="fab fa-js"></i>
-                <span>JavaScript</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-html5"></i>
-                <span>HTML5</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-css3-alt"></i>
-                <span>CSS3</span>
-              </div>
-              <div class="skill-item">
-                <i class="fa-solid fa-code"></i>
-                <span>C#</span>
-              </div>
-              <!-- <div class="skill-item">
-                <i class="fab fa-react"></i>
-                <span>React</span>
-              </div> -->
-              <!-- <div class="skill-item">
-                <i class="fab fa-node-js"></i>
-                <span>Node.js</span>
-              </div> -->
-              <div class="skill-item">
-                <i class="fab fa-laravel"></i>
-                <span>Laravel</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-bootstrap"></i>
-                <span>Bootstrap</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-wind"></i>
-                <span>Tailwind</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-git-alt"></i>
-                <span>Git</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-github"></i>
-                <span>GitHub</span>
-              </div>
-              <div class="skill-item">
-                <i class="fa-brands fa-git-alt"></i>
-                <span>GitLab</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-database"></i>
-                <span>MySQL</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-database"></i>
-                <span>PostgreSQL</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-android"></i>
-                <span>Flutter</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-fire"></i>
-                <span>Django</span>
-              </div>
-            </div>
-            <!-- Duplicate for seamless loop -->
-            <div class="marquee-content" aria-hidden="true">
-              <div class="skill-item">
-                <i class="fab fa-python"></i>
-                <span>Python</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-js"></i>
-                <span>JavaScript</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-html5"></i>
-                <span>HTML5</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-css3-alt"></i>
-                <span>CSS3</span>
-              </div>
-              <!-- <div class="skill-item">
-                <i class="fab fa-react"></i>
-                <span>React</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-node-js"></i>
-                <span>Node.js</span>
-              </div> -->
-              <div class="skill-item">
-                <i class="fab fa-laravel"></i>
-                <span>Laravel</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-bootstrap"></i>
-                <span>Bootstrap</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-wind"></i>
-                <span>Tailwind</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-git-alt"></i>
-                <span>Git</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-github"></i>
-                <span>GitHub</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-database"></i>
-                <span>MySQL</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-database"></i>
-                <span>PostgreSQL</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-android"></i>
-                <span>Flutter</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-fire"></i>
-                <span>Django</span>
+
+              <div class="vsc-body">
+                <!-- Sidebar Icons -->
+                <div class="vsc-sidebar">
+                  <div class="vsc-icon active"></div>
+                  <div class="vsc-icon"></div>
+                  <div class="vsc-icon"></div>
+                  <div class="vsc-icon"></div>
+                </div>
+
+                <!-- File Explorer -->
+                <div class="vsc-explorer">
+                  <div class="vsc-exp-title">Explorer</div>
+                  <div class="vsc-file"><span>📁</span>portfolio</div>
+                  <div class="vsc-file active"><span>📄</span>index.js</div>
+                  <div class="vsc-file"><span>📄</span>style.css</div>
+                  <div class="vsc-file"><span>📄</span>app.py</div>
+                  <div class="vsc-file"><span>📄</span>models.py</div>
+                </div>
+
+                <!-- Code Editor -->
+                <div class="vsc-editor">
+                  <div class="code-line"><span class="ln">1</span><span class="code"><span class="cm">// Rizky Alfath — Web Dev</span></span></div>
+                  <div class="code-line"><span class="ln">2</span><span class="code"></span></div>
+                  <div class="code-line"><span class="ln">3</span><span class="code"><span class="kw">const</span> <span class="var">developer</span> <span class="op">=</span> {</span></div>
+                  <div class="code-line"><span class="ln">4</span><span class="code">  <span class="text-w">name</span>: <span class="str">'Rizky Alfath'</span>,</span></div>
+                  <div class="code-line"><span class="ln">5</span><span class="code">  <span class="text-w">school</span>: <span class="str">'SMKN 11 Bandung'</span>,</span></div>
+                  <div class="code-line"><span class="ln">6</span><span class="code">  <span class="text-w">major</span>: <span class="str">'RPL'</span>,</span></div>
+                  <div class="code-line"><span class="ln">7</span><span class="code">  <span class="text-w">skills</span>: [<span class="str">'HTML'</span>,</span></div>
+                  <div class="code-line"><span class="ln">8</span><span class="code">    <span class="str">'CSS'</span>, <span class="str">'JS'</span>, <span class="str">'Django'</span>],</span></div>
+                  <div class="code-line"><span class="ln">9</span><span class="code">  <span class="text-w">projects</span>: <span class="var">15</span>,</span></div>
+                  <div class="code-line"><span class="ln">10</span><span class="code">  <span class="text-w">location</span>: <span class="str">'Bandung, ID'</span>,</span></div>
+                  <div class="code-line"><span class="ln">11</span><span class="code">  <span class="fn">isAvailable</span>: <span class="text-g">true</span></span></div>
+                  <div class="code-line"><span class="ln">12</span><span class="code">};</span></div>
+                  <div class="code-line"><span class="ln">13</span><span class="code"></span></div>
+                  <div class="code-line"><span class="ln">14</span><span class="code"><span class="fn">console</span>.<span class="fn">log</span>(<span class="str">'Hire me!'</span>);<span class="cursor"></span></span></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Hinge -->
+        <div class="laptop-hinge"></div>
+
+        <!-- Base -->
+        <div class="laptop-base"></div>
+        <div class="laptop-glow"></div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section id="about" class="section">
-      <div class="container about-grid">
-        <div class="about-text">
-          <h2>About</h2>
-          <p>
-            I'm a Software Engineering (RPL) student at <strong>SMKN 11 Bandung</strong>. I specialize in building
-            responsive and performant web applications using Django, JavaScript, and Flutter for mobile projects.
-            I enjoy learning new tech and solving real problems with elegant code.
-          </p>
-          <ul class="meta">
-            <li><strong>Location:</strong> Bandung, Indonesia</li>
-            <li><strong>Role:</strong> Web Developer / RPL Student</li>
-            <li><strong>Contact:</strong> rizkyalfath80@gmail.com</li>
-          </ul>
-        </div>
-
-        <div class="about-card">
-          <div class="photo-wrap">
-            <img src="assets\profile.jpg" alt="Rizky Alfath" />
-          </div>
-          <div class="card-info">
-            <h3>Quick facts</h3>
-            <ul>
-              <li>SMKN 11 Bandung — RPL</li>
-              <li>Projects: Guestbook Digital, Kopasmen Web</li>
-              <li>Tools: Git, VS Code, Postman</li>
-            </ul>
-            <a class="btn-small" href="https://github.com/alfathz" target="_blank">View GitHub</a>
-          </div>
-        </div>
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">about</div>
+  <div class="about-grid">
+    <div>
+      <h2>Siapa Saya?</h2>
+      <div class="about-text">
+        <p>Halo! Saya <strong style="color:var(--accent)">Rizky Alfath</strong>, seorang pelajar dari SMKN 11 Bandung jurusan RPL yang punya minat besar dalam pengembangan web.</p>
+        <p>Saya fokus pada pembuatan website dan aplikasi web yang bukan hanya terlihat menarik, tapi juga fungsional dan berperforma tinggi.</p>
       </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-
-            <article class="project-card">
-                <div class="project-body">
-                <h3>kopasmen_mobile</h3>
-                <p>Project tim koperasi berbasis mobile menggunakan C++ untuk logika utama.</p>
-                <div class="tags">
-                    <span>C++</span>
-                    <span>Flutter</span>
-                    <span>HTML</span>
-                    <span>Team Project</span>
-                </div>
-                <a class="btn-small" href="https://github.com/RizkyAlfathH/kopasmen_mobile" target="_blank">View Repo</a>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-body">
-                <h3>KopasmenSebelas</h3>
-                <p>Aplikasi koperasi berbasis web menggunakan Django dan HTML frontend.</p>
-                <div class="tags">
-                    <span>Django</span>
-                    <span>HTML</span>
-                    <span>Python</span>
-                    <span>Team Project</span>
-                </div>
-                <a class="btn-small" href="https://github.com/RizkyAlfathH/KopasmenSebelas" target="_blank">View Repo</a>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-body">
-                <h3>laravel-portofolio</h3>
-                <p>Latihan membuat portofolio web dengan framework Laravel.</p>
-                <div class="tags">
-                    <span>Laravel</span>
-                    <span>PHP</span>
-                    <span>HTML</span>
-                    <span>JavaScript</span>
-                    <span>Blade</span>
-                    <span>CSS</span>
-                </div>
-                <a class="btn-small" href="https://github.com/RizkyAlfathH/laravel-portofolio" target="_blank">View Repo</a>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-body">
-                <h3>portofolio</h3>
-                <p>Website portofolio pribadi pertama menggunakan HTML, CSS murni dan JavaScript.</p>
-                <div class="tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                </div>
-                <a class="btn-small" href="https://github.com/RizkyAlfathH/portofolio" target="_blank">View Repo</a>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-body">
-                <h3>Web-Statis</h3>
-                <p>Latihan dasar membuat halaman web statis dengan HTML dan CSS.</p>
-                <div class="tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>Static Page</span>
-                </div>
-                <a class="btn-small" href="https://github.com/RizkyAlfathH/Web-Statis" target="_blank">View Repo</a>
-                </div>
-            </article>
-            </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <span class="stat-num">15+</span>
+          <div class="stat-label">Proyek Selesai</div>
         </div>
-    </section>
-
-
-    <section id="contact" class="section">
-      <div class="container contact-inner">
-        <h2>Contact</h2>
-        <p>Want to collaborate or hire? Send me a message.</p>
-        <div class="contact-actions">
-          <a href="mailto:rizkyalfath@example.com" class="btn">Say Hello</a>
-          <div class="socials">
-            <a href="https://github.com/alfathz" target="_blank" title="GitHub">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://instagram.com/alfathz" target="_blank" title="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://id.linkedin.com/in/rizky-alfath-humaedi-6b6944331" target="_blank" title="LinkedIn">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://wa.me/6281998473571" target="_blank" title="WhatsApp">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-          </div>
+        <div class="stat-card">
+          <span class="stat-num">RPL</span>
+          <div class="stat-label">Jurusan di SMKN 11</div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">5+</span>
+          <div class="stat-label">Teknologi dikuasai</div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">100%</span>
+          <div class="stat-label">Passion & Dedication</div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+    <div class="about-image-wrap">
+      <img src="Portofolio\assets\profile.jpg" alt="Rizky Alfath" onerror="this.src='https://placehold.co/400x400/0f0f1a/00d4ff?text=RA'">
+    </div>
+  </div>
+</section>
 
-  <footer class="site-footer">
-    <div class="container">© 2025 Rizky Alfath • Built with code & ☕</div>
-  </footer>
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label">skills</div>
+  <h2>Apa yang Saya Kuasai</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-icon">🌐</div>
+      <div class="skill-name">HTML / CSS</div>
+      <p class="skill-desc">Membuat layout dan tampilan web yang responsif dengan HTML5 dan CSS3.</p>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:90%"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">⚡</div>
+      <div class="skill-name">JavaScript</div>
+      <p class="skill-desc">Mengembangkan fungsionalitas interaktif dengan JavaScript modern (ES6+).</p>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🎨</div>
+      <div class="skill-name">Bootstrap</div>
+      <p class="skill-desc">Membangun UI yang konsisten dan responsif dengan Bootstrap framework.</p>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🐍</div>
+      <div class="skill-name">Django</div>
+      <p class="skill-desc">Mengembangkan aplikasi web fullstack dengan framework Django berbasis Python.</p>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🗄️</div>
+      <div class="skill-name">Database</div>
+      <p class="skill-desc">Mengelola basis data dengan MySQL, PostgreSQL, dan MongoDB.</p>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🔧</div>
+      <div class="skill-name">Git & Tools</div>
+      <p class="skill-desc">Version control dengan Git, workflow modern, dan berbagai developer tools.</p>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label">projects</div>
+  <h2>Proyek Terbaru</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-tag">Python (Django)</div>
+      <h3>Pengaduan Masyarakat</h3>
+      <p>Aplikasi Django untuk menangani laporan pengaduan dari masyarakat secara digital dan terstruktur.</p>
+      <div class="project-arrow">Lihat Detail <span>→</span></div>
+    </div>
+    <div class="project-card">
+      <div class="project-tag">Python (Django)</div>
+      <h3>Koperasi Sekolah</h3>
+      <p>Sistem manajemen koperasi untuk lingkungan sekolah dengan fitur inventaris dan transaksi.</p>
+      <div class="project-arrow">Lihat Detail <span>→</span></div>
+    </div>
+    <div class="project-card">
+      <div class="project-tag">HTML / CSS</div>
+      <h3>Website Statis</h3>
+      <p>Website sederhana menggunakan HTML dan CSS untuk tampilan portofolio atau landing page yang clean.</p>
+      <div class="project-arrow">Lihat Detail <span>→</span></div>
+    </div>
+    <div class="project-card">
+      <div class="project-tag">Portofolio</div>
+      <h3>Personal Portfolio</h3>
+      <p>Website portofolio pribadi yang menampilkan proyek, keahlian, dan informasi kontak secara elegan.</p>
+      <div class="project-arrow">Lihat Detail <span>→</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label">contact</div>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h2>Mari Bekerja Sama</h2>
+      <p>Saya terbuka untuk peluang freelance, magang, atau proyek kolaborasi. Jangan ragu menghubungi saya!</p>
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div class="contact-detail">
+          <small>Email</small>
+          <span>rizkyalfath80@gmail.com</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📱</div>
+        <div class="contact-detail">
+          <small>Telepon</small>
+          <span>+62 821 1570 0877</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div class="contact-detail">
+          <small>Lokasi</small>
+          <span>Bandung, Jawa Barat, Indonesia</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>NAMA LENGKAP</label>
+            <input type="text" placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label>EMAIL</label>
+            <input type="email" placeholder="john@email.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>SUBJEK</label>
+          <input type="text" placeholder="Topik pesan...">
+        </div>
+        <div class="form-group">
+          <label>PESAN</label>
+          <textarea placeholder="Halo Rizky, saya tertarik untuk..."></textarea>
+        </div>
+        <button class="btn btn-primary" style="align-self:flex-start">Kirim Pesan →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 <span>Rizky Alfath</span>. All rights reserved.</p>
+  <p>Built with <span>♥</span> in Bandung, Indonesia</p>
+</footer>
 
   <script src="script.js"></script>
 </body>
